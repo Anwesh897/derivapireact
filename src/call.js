@@ -6,6 +6,7 @@ import WebSocket from 'ws';
 
 const app_id = 51526;
 const token = 'oTFzEY0IoR4p1ax';
+const timer = 1000;
 
 class Call extends React.Component {
     render() {
@@ -65,7 +66,7 @@ class Call extends React.Component {
                     const buy = await contract.buy();
                     setInterval(function () {
                         return contract.sell(({ subscribe: 0 }))
-                    }, 5000)
+                    }, timer)
 
 
                     //console.log(buy.contract_id)
