@@ -24,6 +24,19 @@
   color: white;
 }
 
+.purchase {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  background: #61dafb;
+  color: #282c34;
+}
+
+.purchase:hover {
+  cursor: pointer;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -32,6 +45,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
