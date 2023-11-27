@@ -24,16 +24,29 @@
   color: white;
 }
 
-.purchase {
+.call {
   width: 200px;
   height: 50px;
   text-align: center;
   font-size: 25px;
-  background: #61dafb;
-  color: #282c34;
+  background: #05673e;
+  color: #61dafb;
 }
 
-.purchase:hover {
+.call:hover {
+  cursor: pointer;
+}
+
+.put {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  background: #670505;
+  color: #61dafb;
+}
+
+.put:hover {
   cursor: pointer;
 }
 
