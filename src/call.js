@@ -4,8 +4,13 @@ import DerivAPI from '@deriv/deriv-api';
 import { find } from 'rxjs/operators'
 import WebSocket from 'ws';
 
-const app_id = 51526;
-const token = 'oTFzEY0IoR4p1ax';
+//Demo account
+// const app_id = 51526;
+// const token = 'oTFzEY0IoR4p1ax';
+//
+//Real account
+const app_id = 51689;
+const token = 'CCuoZLMl32n4h89';
 const timer = 1000;
 
 class Call extends React.Component {
@@ -41,7 +46,7 @@ class Call extends React.Component {
                         multiplier: 5000,
                         currency: "USD",
                         basis: "stake",
-                        amount: 50,
+                        amount: 5,
                     });
 
                     contract.onUpdate(({ status, payout, bid_price }) => {
@@ -64,9 +69,9 @@ class Call extends React.Component {
                     //     .pipe(find(({ payout }) => payout.value >= expected_payout)).toPromise();
 
                     const buy = await contract.buy();
-                    setInterval(function () {
-                        return contract.sell(({ subscribe: 0 }))
-                    }, timer)
+                    // setInterval(function () {
+                    //     return contract.sell(({ subscribe: 0 }))
+                    // }, timer)
 
 
                     //console.log(buy.contract_id)
