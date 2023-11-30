@@ -5,16 +5,19 @@ import { find } from 'rxjs/operators'
 import WebSocket from 'ws';
 
 //Demo account
-// const app_id = 51526;
-// const token = 'oTFzEY0IoR4p1ax';
+const app_id = 51526;
+const token = 'oTFzEY0IoR4p1ax';
 //
 //Real account
-const app_id = 51689;
-const token = 'CCuoZLMl32n4h89';
+// const app_id = 51689;
+// const token = 'CCuoZLMl32n4h89';
 const timer = 1000;
+const inputNumber = document.getElementsByClassName("input")[0]; 
+
 
 class Put extends React.Component {
     render() {
+
         function handleClick(e) {
             e.preventDefault();
 
